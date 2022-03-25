@@ -1,0 +1,157 @@
+/**
+ * Base16 Grayscale Dark ROFI Color theme
+ *
+ * Authors
+ *  Scheme: Alexandre Gavioli (https://github.com/Alexx2/)
+ *  Template: Jordi Pakey-Rodriguez (https://github.com/0xdec), Andrea Scarpino (https://github.com/ilpianista)
+ */
+
+* {
+    red:                         rgba ( 171, 70, 66, 100 % );
+    blue:                        rgba ( 124, 175, 194, 100 % );
+    green:                       rgba ( 161, 181, 108, 100 % );
+    brown:                       rgba ( 220, 150, 86, 100 % );
+    lightfg:                     rgba ( 227, 227, 227, 100 % );
+    lightbg:                     rgba ( 40, 40, 40, 100 % );
+    foreground:                  rgba ( 152, 152, 152, 100 % );
+    background:                  rgba ( 40, 40, 40, 100 % );
+    background-color:            rgba ( 40, 40, 40, 0 % );
+    separatorcolor:              @blue;
+    border-color:                @brown;
+    selected-normal-foreground:  @background;
+    selected-normal-background:  @blue;
+    selected-active-foreground:  @background;
+    selected-active-background:  @blue;
+    selected-urgent-foreground:  @background;
+    selected-urgent-background:  @red;
+    normal-foreground:           @foreground;
+    normal-background:           @background;
+    active-foreground:           @blue;
+    active-background:           @background;
+    urgent-foreground:           @red;
+    urgent-background:           @background;
+    alternate-normal-foreground: @foreground;
+    alternate-normal-background: @lightbg;
+    alternate-active-foreground: @blue;
+    alternate-active-background: @lightbg;
+    alternate-urgent-foreground: @red;
+    alternate-urgent-background: @lightbg;
+    spacing:                     2;
+}
+window {
+    background-color: @background;
+    border:           1px;
+    padding:          0px;
+}
+mainbox {
+    border:           0px;
+    padding:          16px;
+}
+message {
+    border:           0px dash 0px 0px;
+    border-color:     @separatorcolor;
+    padding:          1px;
+}
+textbox {
+    text-color:       @foreground;
+}
+listview {
+    fixed-height:     0px;
+    border:           0px dash 0px 0px;
+    border-color:     @border-color;
+    spacing:          8px;
+    scrollbar:        true;
+    padding:          2px 0px 0px;
+}
+element {
+    border:           0px;
+    padding:          4px 8px 4px 8px;
+}
+element normal.normal {
+    background-color: @normal-background;
+    text-color:       @normal-foreground;
+}
+element normal.urgent {
+    background-color: @urgent-background;
+    text-color:       @urgent-foreground;
+}
+element normal.active {
+    background-color: @active-background;
+    text-color:       @active-foreground;
+}
+element selected.normal {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+element selected.urgent {
+    background-color: @selected-urgent-background;
+    text-color:       @selected-urgent-foreground;
+}
+element selected.active {
+    background-color: @selected-active-background;
+    text-color:       @selected-active-foreground;
+}
+element alternate.normal {
+    background-color: @alternate-normal-background;
+    text-color:       @alternate-normal-foreground;
+}
+element alternate.urgent {
+    background-color: @alternate-urgent-background;
+    text-color:       @alternate-urgent-foreground;
+}
+element alternate.active {
+    background-color: @alternate-active-background;
+    text-color:       @alternate-active-foreground;
+}
+scrollbar {
+    width:            4px;
+    border:           0px;
+    handle-color:     @blue;
+    handle-width:     4px;
+    padding:          0px;
+}
+sidebar {
+    border:           1px dash 0px 0px;
+    border-color:     @separatorcolor;
+}
+button {
+    spacing:          0px;
+    text-color:       @normal-foreground;
+}
+button selected {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+inputbar {
+    spacing:          8px;
+    text-color:       @normal-foreground;
+    padding:          0px 0px 8px 8px;
+    children:         [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+case-indicator {
+    spacing:          0px;
+    text-color:       @normal-foreground;
+}
+entry {
+    spacing:          0px;
+    text-color:       @normal-foreground;
+}
+prompt {
+    spacing:          0px;
+    text-color:       @normal-foreground;
+}
+textbox-prompt-colon {
+    expand:           false;
+    str:              " > ";
+    margin:           0px 0px 0px 0px;
+    text-color:       inherit;
+}
+
+
+/* Timeout */
+configuration {
+    timeout {
+        delay: 10;
+        action: "kb-cancel";
+    }
+}

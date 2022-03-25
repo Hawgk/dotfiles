@@ -1,0 +1,50 @@
+[global]
+    font = TerminessTTF Nerd Font Medium 12
+    markup = yes
+    format = "<b>%s</b>\n%b"
+    sort = yes
+    indicate_hidden = yes
+    alignment = center
+    bounce_freq = 0
+    show_age_threshold = 60
+    word_wrap = yes
+    ignore_newline = no
+    geometry = "400x10-10+10"
+    shrink = yes
+    transparency = 20
+    idle_threshold = 0
+    #monitor = 0
+    follow = mouse
+    sticky_history = yes
+    history_length = 20
+    show_indicators = no
+    line_height = 0
+    separator_height = 2
+    padding = 5
+    horizontal_padding = 5
+    frame_color = "#dc9656"
+    separator_color = frame
+    frame_width = 1
+    startup_notification = false
+    dmenu = /usr/bin/dmenu -p dunst:
+    browser = /usr/bin/chromium
+    icon_position = left
+    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+
+[shortcuts]
+
+[urgency_low]
+    background = "#282828"
+    foreground = "#b8b8b8"
+    timeout = 3
+
+[urgency_normal]
+    background = "#282828"
+    foreground = "#b8b8b8"
+    timeout = 3
+
+[urgency_critical]
+    background = "#ab4642"
+    foreground = "#282828"
+    frame_color = "#ab4642"
+    timeout = 5

@@ -1,0 +1,28 @@
+{
+	"common": {
+		"term_truecolor": false,
+		"colorscheme": "base24"
+	},
+	"ext": {
+		"shell": {
+			"theme": "default_leftonly_lge",
+			"local_themes": {
+				"continuation": "continuation",
+				"select": "select"
+			}
+		},
+    "tmux": {
+      "theme": "default"
+    },
+		"vim": {
+			"theme": "default",
+			"local_themes": {
+				"__tabline__": "tabline",
+
+				"cmdwin": "cmdwin",
+				"help": "help",
+				"quickfix": "quickfix"
+			}
+		}
+	}
+}

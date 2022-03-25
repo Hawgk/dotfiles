@@ -1,0 +1,15 @@
+{
+  "name": "base24",
+  "groups": {
+		"active_window_status": { "fg": "base24:base0D", "bg": "base24:base02", "attrs": [] },
+		"window_status":        { "fg": "base24:base0C", "bg": "base24:base02", "attrs": [] },
+		"activity_status":      { "fg": "base24:base0A", "bg": "base24:base02", "attrs": [] },
+		"bell_status":          { "fg": "base24:base08", "bg": "base24:base02", "attrs": [] },
+		"window":               { "fg": "base24:base0C", "bg": "base24:base02", "attrs": [] },
+		"window:divider":       { "fg": "base24:base01", "bg": "base24:base02", "attrs": [] },
+		"window:current":       { "fg": "base24:base07", "bg": "base24:base01", "attrs": [] },
+		"window_name":          { "fg": "base24:base07", "bg": "base24:base01", "attrs": ["bold"] },
+		"session":              { "fg": "base24:base07", "bg": "base24:base01", "attrs": [] },
+		"session:prefix":       { "fg": "base24:base01", "bg": "base24:base07", "attrs": [] }
+	}
+}
