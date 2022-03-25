@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+msgID=17865
+disconnected=""
+disconnected2=""
+wireless_connected=""
+ethernet_connected=""
+stat=0
+
+while true; do
+    if ping -c1 8.8.8.8 &>/dev/null; then
+	if [[ $stat > 1 ]]; then
+	    dunstify "Connected" -r "$msgID"
+	fi
+	stat=0
+        ID=$(ip link | awk '/state UP/ {print $2}')
+        if [[ $ID == e* ]]; then
+            echo "$ethernet_connected" ; sleep 1
+        else
+            echo "$wireless_connected" ; sleep 1
+        fi
+    else
+	stat=$((stat+1))
+	if [[ $stat == 2 ]]; then
+	    dunstify "Disconnected" -r "$msgID"
+	fi
+	if ping -c1 192.168.0.1 &>/dev/null; then
+	    echo "$disconnected2" ; sleep 1
+	else
+	    echo "$disconnected" ; sleep 1
+	fi
+    fi
+done
