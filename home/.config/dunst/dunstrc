@@ -1,35 +1,49 @@
 [global]
-    font = TerminessTTF Nerd Font Medium 12
+    # Text
+    font = Pixel Carnage Mono 12
     markup = yes
-    format = "<b>%s</b>\n%b"
+    format = "%s\n%b"
     sort = yes
     indicate_hidden = yes
-    alignment = center
+    alignment = left
     bounce_freq = 0
     show_age_threshold = 60
     word_wrap = yes
     ignore_newline = no
-    geometry = "400x10-10+10"
+
+    # Position and size
+#geometry = "400x10-10+10"
+    width = 200
+    heigth = 16
+    origin = top-right
+    offset = 10x10
     shrink = yes
     transparency = 20
+
+    # Behaviour
     idle_threshold = 0
-    #monitor = 0
     follow = mouse
     sticky_history = yes
     history_length = 20
     show_indicators = no
     line_height = 0
-    separator_height = 2
-    padding = 5
-    horizontal_padding = 5
+    notification_limit = 2
+    sort = true
+
+    # Visual
+    separator_height = 1
+    padding = 4
+    horizontal_padding = 4
     frame_color = "#dc9656"
     separator_color = frame
     frame_width = 1
+    icon_position = off
+    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+
+    # Other
     startup_notification = false
     dmenu = /usr/bin/dmenu -p dunst:
     browser = /usr/bin/chromium
-    icon_position = left
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
 [shortcuts]
 
