@@ -12,8 +12,15 @@ syntax on
 set clipboard=unnamedplus
 set mouse=a
 
-map <F1> :NERDTreeToggle<CR>
-map <F2> :TagbarToggle<CR>
+highlight VertSplit ctermbg=0
+highlight VertSplit ctermfg=0
+
+map <F1> :NERDTreeToggle<cr>
+map <F2> :TagbarToggle<cr>
+
+" Resize options
+map R+ :vertical resize +10<cr>
+map R- :vertical resize -10<cr>
 
 " Elixir Tagbar Configuration
 let g:tagbar_type_elixir = {
@@ -41,15 +48,6 @@ let g:fzf_action = {
 let g:fzf_layout = { 'down': '~40%' }
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
-" Syntastic Configuration
-"set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
-"set statusline+=%*
-
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
-
 set hlsearch
 set smartcase
 set ignorecase
@@ -74,4 +72,12 @@ let g:airline_theme='base16color'
 
 map q :q<cr>
 map s :w<cr>
-map ss :w !sudo tee %<cr>  
+map ss :w !sudo tee %<cr>
+
+" Auto brackets etc
+inoremap ( ()<Left>
+inoremap [ []<Left>
+inoremap { {}<Left>
+inoremap ' ''<Left>
+inoremap " ""<Left>
+inoremap < <><Left>
