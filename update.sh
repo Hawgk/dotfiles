@@ -12,7 +12,9 @@ mkdir ./home/.config
 cp ~/.bashrc ./home
 cp ~/.vimrc ./home
 
+cp $CONFIG_FOLDER/betterlockscreenrc $REPO_CONFIG_FOLDER/betterlockscreenrc
 cp $CONFIG_FOLDER/picom.conf $REPO_CONFIG_FOLDER/picom.conf
+
 mkdir $REPO_CONFIG_FOLDER/alacritty && cp -r $CONFIG_FOLDER/alacritty $REPO_CONFIG_FOLDER/alacritty
 mkdir $REPO_CONFIG_FOLDER/dunst && cp -r $CONFIG_FOLDER/dunst $REPO_CONFIG_FOLDER/dunst
 mkdir $REPO_CONFIG_FOLDER/htop && cp -r $CONFIG_FOLDER/htop $REPO_CONFIG_FOLDER/htop

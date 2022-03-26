@@ -1,0 +1,37 @@
+# ~/.config/betterlockscreenrc
+
+# default options
+display_on=0
+span_image=false
+lock_timeout=300
+fx_list=(dim blur dimblur pixel dimpixel color)
+dim_level=40
+blur_level=1
+pixel_scale=10,1000
+solid_color=333333
+wallpaper_cmd="feh --bg-fill"
+quiet=false
+# i3lockcolor_bin="i3lock-color" # Manually set command for i3lock-color
+
+# default theme
+loginbox=282828ff
+loginshadow=282828d9
+locktext="You know the drill"
+font="PixelCarnageMonoTT"
+ringcolor=353535b9
+insidecolor=282828b9
+separatorcolor=00000000
+ringvercolor=a1b56cb9
+insidevercolor=282828b9
+ringwrongcolor=ab4642b9
+insidewrongcolor=282828b9
+timecolor=d8d8d8b9
+time_format="%H:%M:%S"
+greetercolor=d8d8d8b9
+layoutcolor=ffffff00
+keyhlcolor=dc9656b9
+bshlcolor=ab4642b9
+verifcolor=a1b56c00
+wrongcolor=ab464200
+modifcolor=ab4642b9
+bgcolor=282828ff
