@@ -14,8 +14,8 @@ quiet=false
 # i3lockcolor_bin="i3lock-color" # Manually set command for i3lock-color
 
 # default theme
-loginbox=282828ff
-loginshadow=282828d9
+loginbox=28282800
+loginshadow=28282800
 locktext="You know the drill"
 font="PixelCarnageMonoTT"
 ringcolor=353535b9
