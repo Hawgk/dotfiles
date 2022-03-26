@@ -96,37 +96,44 @@ bindsym $mod+a focus parent
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $i3ws1 "1 | >_"
-set $i3ws2 "2 | www"
-set $i3ws3 "3 | exp"
-set $i3ws4 "4 | code"
-set $i3ws5 "5 | mail"
-set $i3ws6 "6 | etc"
-set $i3ws7 "7 | 7"
-set $i3ws8 "8 | 8"
-set $i3ws9 "9 | 9"
+set $ws1 "1 | >_"
+set $ws2 "2 | www"
+set $ws3 "3 | exp"
+set $ws4 "4 | code"
+set $ws5 "5 | mail"
+set $ws6 "6 | etc"
+set $ws7 "7 | 7"
+set $ws8 "8 | 8"
+set $ws9 "9 | 9"
 
 # switch to workspace
-bindsym $mod+1 workspace $i3ws1
-bindsym $mod+2 workspace $i3ws2
-bindsym $mod+3 workspace $i3ws3
-bindsym $mod+4 workspace $i3ws4
-bindsym $mod+5 workspace $i3ws5
-bindsym $mod+6 workspace $i3ws6
-bindsym $mod+7 workspace $i3ws7
-bindsym $mod+8 workspace $i3ws8
-bindsym $mod+9 workspace $i3ws9
+bindsym $mod+1 workspace $ws1
+bindsym $mod+2 workspace $ws2
+bindsym $mod+3 workspace $ws3
+bindsym $mod+4 workspace $ws4
+bindsym $mod+5 workspace $ws5
+bindsym $mod+6 workspace $ws6
+bindsym $mod+7 workspace $ws7
+bindsym $mod+8 workspace $ws8
+bindsym $mod+9 workspace $ws9
 
 # move focused container to 
-bindsym $mod+Ctrl+1 move container to workspace $i3ws1
-bindsym $mod+Ctrl+2 move container to workspace $i3ws2
-bindsym $mod+Ctrl+3 move container to workspace $i3ws3
-bindsym $mod+Ctrl+4 move container to workspace $i3ws4
-bindsym $mod+Ctrl+5 move container to workspace $i3ws5
-bindsym $mod+Ctrl+6 move container to workspace $i3ws6
-bindsym $mod+Ctrl+7 move container to workspace $i3ws7
-bindsym $mod+Ctrl+8 move container to workspace $i3ws8
-bindsym $mod+Ctrl+9 move container to workspace $i3ws9
+bindsym $mod+Ctrl+1 move container to workspace $ws1
+bindsym $mod+Ctrl+2 move container to workspace $ws2
+bindsym $mod+Ctrl+3 move container to workspace $ws3
+bindsym $mod+Ctrl+4 move container to workspace $ws4
+bindsym $mod+Ctrl+5 move container to workspace $ws5
+bindsym $mod+Ctrl+6 move container to workspace $ws6
+bindsym $mod+Ctrl+7 move container to workspace $ws7
+bindsym $mod+Ctrl+8 move container to workspace $ws8
+bindsym $mod+Ctrl+9 move container to workspace $ws9
+
+# i3-layouts
+set $i3l 2columns right to workspace $ws1
+set $i3l vstack 0.7 right to workspace $ws2
+set $i3l autosplit to workspace $ws3
+set $i3l vstack 0.6 right to workspace $ws4
+exec_always --no-startup-id i3-layouts
 
 # redshift
 bindsym $mod+n exec redshift -PO 5000
