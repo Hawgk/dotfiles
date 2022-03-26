@@ -32,3 +32,5 @@ cp $BIN_FOLDER/check-vpn ./scripts
 cp $BIN_FOLDER/rofr.sh ./scripts
 cp $BIN_FOLDER/updates.sh ./scripts
 cp $BIN_FOLDER/volumecontrol.sh ./scripts
+cp $BIN_FOLDER/betterlockscreen ./scripts
+
