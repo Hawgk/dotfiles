@@ -15,15 +15,15 @@ cp ~/.vimrc ./home
 cp $CONFIG_FOLDER/betterlockscreenrc $REPO_CONFIG_FOLDER/betterlockscreenrc
 cp $CONFIG_FOLDER/picom.conf $REPO_CONFIG_FOLDER/picom.conf
 
-mkdir $REPO_CONFIG_FOLDER/alacritty && cp -r $CONFIG_FOLDER/alacritty $REPO_CONFIG_FOLDER/alacritty
-mkdir $REPO_CONFIG_FOLDER/dunst && cp -r $CONFIG_FOLDER/dunst $REPO_CONFIG_FOLDER/dunst
-mkdir $REPO_CONFIG_FOLDER/htop && cp -r $CONFIG_FOLDER/htop $REPO_CONFIG_FOLDER/htop
-mkdir $REPO_CONFIG_FOLDER/i3 && cp -r $CONFIG_FOLDER/i3 $REPO_CONFIG_FOLDER/i3
-mkdir $REPO_CONFIG_FOLDER/polybar && cp -r $CONFIG_FOLDER/polybar $REPO_CONFIG_FOLDER/polybar
-mkdir $REPO_CONFIG_FOLDER/powerline && cp -r $CONFIG_FOLDER/powerline $REPO_CONFIG_FOLDER/powerline
-mkdir $REPO_CONFIG_FOLDER/powerline-shell && cp -r $CONFIG_FOLDER/powerline-shell $REPO_CONFIG_FOLDER/powerline-shell
-mkdir $REPO_CONFIG_FOLDER/ranger && cp -r $CONFIG_FOLDER/ranger $REPO_CONFIG_FOLDER/ranger
-mkdir $REPO_CONFIG_FOLDER/rofi && cp -r $CONFIG_FOLDER/rofi $REPO_CONFIG_FOLDER/rofi
+mkdir $REPO_CONFIG_FOLDER/alacritty && cp -r $CONFIG_FOLDER/alacritty $REPO_CONFIG_FOLDER
+mkdir $REPO_CONFIG_FOLDER/dunst && cp -r $CONFIG_FOLDER/dunst $REPO_CONFIG_FOLDER
+mkdir $REPO_CONFIG_FOLDER/htop && cp -r $CONFIG_FOLDER/htop $REPO_CONFIG_FOLDER
+mkdir $REPO_CONFIG_FOLDER/i3 && cp -r $CONFIG_FOLDER/i3 $REPO_CONFIG_FOLDER
+mkdir $REPO_CONFIG_FOLDER/polybar && cp -r $CONFIG_FOLDER/polybar $REPO_CONFIG_FOLDER
+mkdir $REPO_CONFIG_FOLDER/powerline && cp -r $CONFIG_FOLDER/powerline $REPO_CONFIG_FOLDER
+mkdir $REPO_CONFIG_FOLDER/powerline-shell && cp -r $CONFIG_FOLDER/powerline-shell $REPO_CONFIG_FOLDER
+mkdir $REPO_CONFIG_FOLDER/ranger && cp -r $CONFIG_FOLDER/ranger $REPO_CONFIG_FOLDER
+mkdir $REPO_CONFIG_FOLDER/rofi && cp -r $CONFIG_FOLDER/rofi $REPO_CONFIG_FOLDER
 
 rm -rf ./scripts
 mkdir ./scripts
