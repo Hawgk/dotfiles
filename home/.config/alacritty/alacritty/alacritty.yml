@@ -35,19 +35,19 @@ colors:
 # Fonts
 font:
   normal:
-    family: Terminus
+    family: Terminus (TTF)
     style: Regular
 
   bold:
-    family: Terminus
+    family: Terminus (TTF)
     style: Bold
 
   italic:
-    family: Terminus
+    family: Terminus (TTF)
     style: Italic
 
   bold_italic:
-    family: Terminus
+    family: Terminus (TTF)
     style: Bold Italic
 
-  size: 7
+  size: 12

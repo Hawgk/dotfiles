@@ -150,6 +150,7 @@ textbox-prompt-colon {
 
 /* Timeout */
 configuration {
+    font:	      "Terminus (TTF) 12";
     timeout {
         delay: 10;
         action: "kb-cancel";
