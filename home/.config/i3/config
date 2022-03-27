@@ -198,8 +198,9 @@ bindsym XF86AudioRaiseVolume exec volumecontrol.sh -i
 bindsym XF86AudioLowerVolume exec volumecontrol.sh -d
 bindsym XF86AudioMute exec volumecontrol.sh -m
 
-# Lock21
+# Lockscreen
 bindsym $mod+l exec betterlockscreen -l
+exec --no-startup-id xautolock -time 10 -locker "betterlockscreen -l"
 
 # Restart option
 bindsym $mod+Delete exec rofr.sh -l
@@ -210,17 +211,25 @@ gaps inner 10
 
 # Polybar launch script (located ~/.config/polybar/launch.sh)
 exec_always --no-startup-id polybar example
+
+# VPN
 #exec --no-startup-id mullvad block-when-disconnected set on
 #exec --no-startup-id mullvad auto-connect set on
 #exec --no-startup-id mullvad connect
 #exec --no-startup-id nohup mullvad-vpn &>/dev/null & disown
-exec_always --no-startup-id picom --experimental-backends
-exec --no-startup-id nitrogen --restore
-exec --no-startup-id redshift -x
-exec_always --no-startup-id redshift -O 6200
 
+# Compositor
+exec_always --no-startup-id picom --experimental-backends
+
+# Wallpaper
+exec --no-startup-id nitrogen --restore
+
+# Display warmth
+exec --no-startup-id redshift -x
+exec --no-startup-id redshift -O 6200
+
+# Start XFCE settings daemon
 exec --no-startup-id xfsettingsd --sm-client-disable
 
-# Lock screen
-exec --no-startup-id xautolock -time 10 -locker "betterlockscreen -l"
-#exec --no-startup-id xss-lock -l "betterlockscreen -l"
+# Battery status
+exec_always --no-startup-id check-battery.sh

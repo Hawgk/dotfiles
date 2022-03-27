@@ -15,9 +15,9 @@ while true; do
 	stat=0
         ID=$(ip link | awk '/state UP/ {print $2}')
         if [[ $ID == e* ]]; then
-            echo "$ethernet_connected" ; sleep 1
+            echo "$ethernet_connected" ; sleep 2
         else
-            echo "$wireless_connected" ; sleep 1
+            echo "$wireless_connected" ; sleep 2
         fi
     else
 	stat=$((stat+1))
@@ -25,9 +25,9 @@ while true; do
 	    dunstify "Disconnected" -r "$msgID"
 	fi
 	if ping -c1 192.168.0.1 &>/dev/null; then
-	    echo "$disconnected2" ; sleep 1
+	    echo "$disconnected2" ; sleep 2
 	else
-	    echo "$disconnected" ; sleep 1
+	    echo "$disconnected" ; sleep 2
 	fi
     fi
 done

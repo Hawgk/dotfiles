@@ -12,8 +12,7 @@
     ignore_newline = no
 
     # Position and size
-#geometry = "400x10-10+10"
-    width = 300
+    width = 350
     heigth = 16
     origin = top-right
     offset = 10x34

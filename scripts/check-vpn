@@ -7,8 +7,8 @@ SUCCESS="Connected"
 while true; do
     if [[ $(timeout -s KILL 0.5 mullvad status | grep status) == *$SUCCESS* ]]
     then
-        echo "$vpn_connected" ; sleep 1
+        echo "$vpn_connected" ; sleep 2
     else
-        echo "$disconnected" ; sleep 1
+        echo "$disconnected" ; sleep 2
     fi
 done
