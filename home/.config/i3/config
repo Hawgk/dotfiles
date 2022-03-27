@@ -180,8 +180,10 @@ client.background       $base00
 
 
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
-new_window 1pixel
-new_float 1pixel
+#new_window 1pixel
+#new_float 1pixel
+new_window none
+new_float none
 
 # Hide borders
 hide_edge_borders none
@@ -205,7 +207,6 @@ bindsym $mod+Delete exec rofr.sh -l
 # Set inner/outer gaps
 # gaps outer 4
 gaps inner 10
-# border_radius 7
 
 # Polybar launch script (located ~/.config/polybar/launch.sh)
 exec_always --no-startup-id polybar example

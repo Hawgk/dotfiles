@@ -12,10 +12,10 @@
     green:                       rgba ( 161, 181, 108, 100 % );
     brown:                       rgba ( 220, 150, 86, 100 % );
     lightfg:                     rgba ( 227, 227, 227, 100 % );
-    lightbg:                     rgba ( 40, 40, 40, 100 % );
+    lightbg:                     rgba ( 25, 25, 25, 100 % );
     foreground:                  rgba ( 152, 152, 152, 100 % );
-    background:                  rgba ( 40, 40, 40, 100 % );
-    background-color:            rgba ( 40, 40, 40, 0 % );
+    background:                  rgba ( 25, 25, 25, 100 % );
+    background-color:            rgba ( 25, 25, 25, 0 % );
     separatorcolor:              @blue;
     border-color:                @brown;
     selected-normal-foreground:  @background;

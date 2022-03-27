@@ -31,12 +31,12 @@
     sort = true
 
     # Visual
-    separator_height = 1
+    separator_height = 0
     padding = 4
     horizontal_padding = 8
     frame_color = "#dc9656"
     separator_color = frame
-    frame_width = 1
+    frame_width = 0
     icon_position = off
     icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
@@ -48,17 +48,17 @@
 [shortcuts]
 
 [urgency_low]
-    background = "#282828"
+    background = "#292929"
     foreground = "#b8b8b8"
     timeout = 3
 
 [urgency_normal]
-    background = "#282828"
+    background = "#292929"
     foreground = "#b8b8b8"
     timeout = 3
 
 [urgency_critical]
     background = "#ab4642"
-    foreground = "#282828"
+    foreground = "#292929"
     frame_color = "#ab4642"
     timeout = 5
